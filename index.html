@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="캡스톤디자인 프로젝트와 주요 작업물을 정리하는 깔끔한 GitHub Pages 포트폴리오"
+    />
+    <title>프로젝트 아카이브 | GitHub Pages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="grid-mask"></div>
+    </div>
+
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="홈으로 이동">
+        <span class="brand-mark">CD</span>
+        <span class="brand-text">
+          <strong>CapD Archive</strong>
+          <small>Project Portfolio</small>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="#about">소개</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#skills">기술</a>
+        <a href="#contact">연락</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Github Pages / Capstone Design</p>
+          <h1>
+            지금까지 만든 프로젝트를
+            <span>한눈에 읽히는 방식</span>으로 정리합니다.
+          </h1>
+          <p class="lead">
+            이 페이지는 캡디에서 진행한 작업을 깔끔하게 보여주기 위한 개인
+            포트폴리오입니다. 프로젝트의 목적, 역할, 사용 기술, 결과를 짧고
+            명확하게 정리해서 면접이나 발표 때 바로 활용할 수 있게 구성했어요.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">프로젝트 보기</a>
+            <a class="button secondary" href="#contact">연락처 확인</a>
+          </div>
+          <dl class="metrics">
+            <div>
+              <dt>프로젝트</dt>
+              <dd><span data-count="projects">04</span>+</dd>
+            </div>
+            <div>
+              <dt>주요 역할</dt>
+              <dd>기획 / 개발 / 발표</dd>
+            </div>
+            <div>
+              <dt>정리 방식</dt>
+              <dd>문제 - 해결 - 결과</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="hero-card">
+          <div class="profile-panel">
+            <div class="avatar">01</div>
+            <div>
+              <p class="panel-label">Current Focus</p>
+              <h2>캡스톤디자인 프로젝트 정리</h2>
+              <p>
+                내용을 길게 쓰기보다, 어떤 문제를 어떤 방식으로 해결했는지
+                중심으로 보여주는 구조입니다.
+              </p>
+            </div>
+          </div>
+          <div class="spotlight">
+            <span>Highlights</span>
+            <ul>
+              <li>핵심 프로젝트 카드 자동 렌더링</li>
+              <li>태그 필터로 분야별 정리</li>
+              <li>모바일에서도 보기 좋은 반응형 레이아웃</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="section intro">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>프로젝트 소개를 더 설득력 있게 만드는 방식</h2>
+        </div>
+        <div class="intro-grid">
+          <article class="info-card">
+            <h3>문제 정의</h3>
+            <p>
+              어떤 상황에서 불편함이나 필요가 있었는지 먼저 한 문장으로
+              설명합니다.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>내 역할</h3>
+            <p>
+              기획, 프론트엔드, 백엔드, 디자인, 발표 등 맡은 역할을 명확하게
+              적습니다.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>결과 정리</h3>
+            <p>
+              기능 구현, 성능 개선, 협업 경험, 사용성 향상처럼 눈에 보이는
+              결과를 정리합니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="section-heading row">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2>진행했던 프로젝트</h2>
+          </div>
+          <div class="filters" id="filters" aria-label="프로젝트 필터"></div>
+        </div>
+        <div id="project-grid" class="project-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>사용 기술</h2>
+        </div>
+        <div class="skill-cloud">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Git / GitHub</span>
+          <span>Figma</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>API 연동</span>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>연락처와 링크</h2>
+            <p>
+              발표용으로도 쓸 수 있게, 깃허브와 이메일 같은 기본 정보만
+              깔끔하게 정리해두었습니다.
+            </p>
+          </div>
+          <div class="contact-links">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:your-email@example.com">your-email@example.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built for capstone project archive.</p>
+      <p>Update the project data in <code>script.js</code> to customize this page.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
